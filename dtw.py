@@ -4,10 +4,7 @@ import wfdb
 DEBUG = False
 
 def dtw(x, y):
-    """
-    x, y:  same size python lists
-    return distance,  path [x_values, y_values]
-    """
+    
     len_x, len_y = len(x), len(y)
     ary0 = zeros((len_x + 1, len_y + 1))
     ary0[0, 1:] = inf
@@ -164,7 +161,7 @@ if __name__ == '__main__':
 
     plt.clf()
     plt.plot(x, 'bo-' ,label='x')
-    plt.plot(y, 'go-', label = 'y')
+    plt.plot(y, 'o-', label = 'y')
     plt.legend();
     paths = path_cost(x, y, costs, distances)
     for [map_x, map_y] in paths:
