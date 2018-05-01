@@ -122,7 +122,7 @@ if __name__ == '__main__':
             print(x_val, y_val)
         print()
 
-    # vizualize
+    # path plot
     from matplotlib import pyplot as plt
     # plt.imshow(cost.T, origin='lower', cmap=plt.cm.Reds, interpolation='nearest')
     plt.plot(path[0], path[1])
